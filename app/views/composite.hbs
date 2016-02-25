@@ -1,0 +1,24 @@
+{{#content head}}
+
+	<script src="/partials-loader"></script>
+
+{{/content }}
+<p><br /></p>
+<div class="row">
+	<div class="col-sm-3">
+		{{#partials.left}}
+		{{>partial-page .}}
+		{{/partials.left}}
+	</div>
+	<div class="col-sm-6">
+		{{#partials.main}}
+		{{>partial-page .}}
+		{{/partials.main}}
+	</div>
+	<div class="col-sm-3">
+		{{#partials.right}}
+		{{>partial-page .}}
+		{{/partials.right}}
+	</div>
+</div>
+
